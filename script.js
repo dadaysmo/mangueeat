@@ -1,0 +1,1 @@
+console.log("O jogo carregou no método simples!");
