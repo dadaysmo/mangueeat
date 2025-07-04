@@ -12,8 +12,45 @@ body {
     background-color: #333;
     border: 2px solid white;
     position: relative;
+    overflow: hidden;
     color: white;
     font-family: sans-serif;
     text-align: center;
-    padding-top: 20px;
+}
+
+#player {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 350px;
+    left: 375px;
+}
+
+.item {
+    width: 30px;
+    height: 30px;
+    background-color: lightgreen;
+    position: absolute;
+    animation-name: fall;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes fall {
+    from {
+        top: -30px;
+    }
+    to {
+        top: 400px;
+    }
+}
+
+#score-display {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
 }
