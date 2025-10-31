@@ -72,6 +72,11 @@ function checkCollision() {
             scoreDisplay.textContent = `Pontos: ${score}`;
         }
     });
+
+    if (score >=20) {
+        sessionStorage.setItem('finalScore', score);
+        window.location.href = '../html/endScreen.html';
+    }
 }
 
 setInterval(checkCollision, 50);
