@@ -8,13 +8,26 @@
 }
 
 .item {
-    width: 30px;
-    height: 30px;
-    background-color: lightgreen;
     position: absolute;
+    image-rendering: pixelated;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     animation-name: fall;
     animation-duration: 3s;
     animation-timing-function: linear;
+}
+
+.alfaia {
+    width: 70px;
+    height: 70px;
+    background-image: url('../assets/itens/alfaia.gif');
+}
+
+.cuscuz {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/itens/cuscuz.gif);
 }
 
 @keyframes fall {

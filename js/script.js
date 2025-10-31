@@ -2,11 +2,15 @@
 const player = document.getElementById('player');
 const gameArea = document.getElementById('game-area');
 const scoreDisplay = document.getElementById('score-display');
-let score =0;
+const itemTypes = [
+    {className: 'alfaia', width: 50},
+    {className: 'cuscuz', width: 50}
+];
 
 // --- estado do jogador ---
 let playerX = 375;
 const playerSpeed = 20;
+let score = 0;
 
 // --- controle do teclado ---
 document.addEventListener('keydown', function(event){
@@ -33,11 +37,16 @@ document.addEventListener('keydown', function(event){
 // --- lógica dos itens ---
 function createItem() {
 
+    const itemIndex = Math.floor(Math.random() * itemTypes.length);
+    const itemInfo = itemTypes[itemIndex];
     const newItem = document.createElement('div');
+
     newItem.classList.add('item');
+    newItem.classList.add(itemInfo.className);
 
     //calcula posição aleatória p/ aparecer
-    const randomX = Math.floor(Math.random()*770);
+    const itemWidth = itemInfo.width;
+    const randomX = Math.floor(Math.random() * (gameArea.offsetWidth - itemWidth));
     newItem.style.left = randomX + 'px';
 
     gameArea.appendChild(newItem);
