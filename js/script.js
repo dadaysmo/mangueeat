@@ -4,7 +4,8 @@ const gameArea = document.getElementById('game-area');
 const scoreDisplay = document.getElementById('score-display');
 const itemTypes = [
     {className: 'alfaia', width: 50},
-    {className: 'cuscuz', width: 50}
+    {className: 'cuscuz', width: 50},
+    {className: 'bandeira-pe', width: 50}
 ];
 
 // --- estado do jogador ---

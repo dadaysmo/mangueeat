@@ -30,6 +30,12 @@
     background-image: url(../assets/itens/cuscuz.gif);
 }
 
+.bandeira-pe {
+    width: 70px;
+    height: 70px;
+    background-image: url(../assets/itens/bandeira-pe.gif);
+}
+
 @keyframes fall {
     from {
         top: -30px;
