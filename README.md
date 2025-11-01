@@ -20,21 +20,12 @@ O objetivo é simples: controlar um Caranguejo-Uçá no chão da tela, movendo-o
 
 ## 🚀 Como Rodar o Projeto
 
-Para testar o jogo localmente, siga estes passos:
+Para testar o jogo localmente:
 
-1.  Clone este repositório:
+Clone este repositório:
     ```sh
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    git clone [https://github.com/dadaysmo/mangueeat.git](https://github.com/dadaysmo/mangueeat.git)
     ```
-2.  Navegue até a pasta do projeto:
-    ```sh
-    cd mangueeat
-    ```
-3.  Inicie um servidor local simples. O comando abaixo usa `npx` para rodar um servidor sem precisar instalar nada globalmente:
-    ```sh
-    npx serve
-    ```
-4.  Abra o endereço `localhost` fornecido no seu navegador.
 
 ## 🎯 Próximos Passos
 
