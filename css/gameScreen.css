@@ -36,6 +36,18 @@
     background-image: url(../assets/itens/bandeira-pe.gif);
 }
 
+.sombrinha {
+    width: 70px;
+    height: 70px;
+    background-image: url(../assets/itens/sombrinha.gif);
+}
+
+.laursa {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/itens/laursa.gif);
+}
+
 @keyframes fall {
     from {
         top: -30px;
